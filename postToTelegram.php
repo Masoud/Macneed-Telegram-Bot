@@ -4,6 +4,8 @@ ini_set('display_errors', 1);
 include('assets/lib/simple_html_dom.php');
 $html = file_get_html('http://macneed.ir');
 require_once 'assets/lib/Unirest.php';
+$chatIDorChannelID = '@example';
+$botToken = 'exampleToken';
 $i = 0;
 $href_single = $_GET['URL'];
 $single = file_get_html($href_single);
@@ -40,7 +42,7 @@ foreach ($single->find('.single') as $title_single) {
     $answer = $_GET['category'];
     if ($answer == "app") {
         $text = [
-            'chat_id' => 'Your_ID',
+            'chat_id' => $chatIDorChannelID,
             'text' => $contet_post,
             'parse_mode' => 'html',
             'reply_markup' => json_encode([
@@ -63,7 +65,7 @@ foreach ($single->find('.single') as $title_single) {
     } 
     else {
         $text = [
-            'chat_id' => 'Your_ID',
+            'chat_id' => $chatIDorChannelID,
             'text' => $contet_post,
             'parse_mode' => 'html',
             'reply_markup' => json_encode([
@@ -79,7 +81,7 @@ foreach ($single->find('.single') as $title_single) {
             ])
         ];
     }
-    $response = Unirest\Request::post('https://api.telegram.org/bot(BOT_Token)/sendMessage', $headers, $text);
+    $response = Unirest\Request::post('https://api.telegram.org/bot'. $botToken .'/sendMessage', $headers, $text);
     $i++;
     if ($i == 1) {
         break;
