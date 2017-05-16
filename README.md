@@ -1,6 +1,6 @@
 # Macneed Telegram Bot
 
-This Telegram Bot crawl posts on [Macneed.ir](http://macneed.ir) and send them to your telegram channel.
+This Telegram Bot crawls posts on [macneed.ir](http://macneed.ir) and posts them on your Telegram channel.
 
 # Installation
-You can use this telegram bot with your [chat_id](https://core.telegram.org/bots/api#sendmessage) or channel_id from telegram.
+You can use this Telegram bot with your [chat_id](https://core.telegram.org/bots/api#sendmessage) or channel_id from Telegram.
