@@ -7,7 +7,7 @@
       <link rel="icon" href="/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="https://lib.arvancloud.com/ar/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://lib.arvancloud.com/ar/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
    </head>
    <body>
       <div class="container topContainer">
