@@ -79,7 +79,7 @@ foreach ($single->find('.single') as $title_single) {
             ])
         ];
     }
-    $response = Unirest\Request::post('https://api.telegram.org/bot264107337:AAFmXAfxdEp8fnWek53wWYwXUlHbYMart7M/sendMessage', $headers, $text);
+    $response = Unirest\Request::post('https://api.telegram.org/bot(API_Token)/sendMessage', $headers, $text);
     $i++;
     if ($i == 1) {
         break;
