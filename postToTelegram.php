@@ -40,7 +40,7 @@ foreach ($single->find('.single') as $title_single) {
     $answer = $_GET['category'];
     if ($answer == "app") {
         $text = [
-            'chat_id' => '74415978',
+            'chat_id' => 'Your_ID',
             'text' => $contet_post,
             'parse_mode' => 'html',
             'reply_markup' => json_encode([
@@ -63,7 +63,7 @@ foreach ($single->find('.single') as $title_single) {
     } 
     else {
         $text = [
-            'chat_id' => '74415978',
+            'chat_id' => 'Your_ID',
             'text' => $contet_post,
             'parse_mode' => 'html',
             'reply_markup' => json_encode([
