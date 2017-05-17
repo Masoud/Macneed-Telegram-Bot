@@ -18,5 +18,5 @@
         "masoud/macneed-telegram-bot": "dev-master",
         "simple-html-dom/simple-html-dom": "*"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
