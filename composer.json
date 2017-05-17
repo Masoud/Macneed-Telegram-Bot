@@ -10,6 +10,12 @@
             "email": "masoudnikoomanesh@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Youpie/simple-html-dom"
+        }
+    ],
     "require-dev": {
         "masoud/macneed-telegram-bot": "dev-master",
         "mashape/unirest-php": "3.*"
