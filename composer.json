@@ -12,9 +12,11 @@
         }
     ],
     "require-dev": {
+        "masoud/macneed-telegram-bot": "@dev",
         "mashape/unirest-php": "3.*"
     },
     "require": {
+        "masoud/macneed-telegram-bot": "@dev",
         "simple-html-dom/simple-html-dom": "*"
     }
 }
