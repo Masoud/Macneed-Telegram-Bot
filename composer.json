@@ -1,0 +1,19 @@
+{
+    "name": "masoud/macneed-telegram-bot",
+    "description": "Macneed Telegram Bot",
+    "type": "project",
+    "homepage": "https://github.com/Masoud/Macneed-Telegram-Bot",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masoud",
+            "email": "masoudnikoomanesh@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "mashape/unirest-php": "3.*"
+    },
+    "require": {
+        "simple-html-dom/simple-html-dom": "*"
+    }
+}
