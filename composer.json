@@ -4,7 +4,6 @@
     "type": "project",
     "homepage": "https://github.com/Masoud/Macneed-Telegram-Bot",
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Masoud",
@@ -12,11 +11,12 @@
         }
     ],
     "require-dev": {
-        "masoud/macneed-telegram-bot": "@dev",
+        "masoud/macneed-telegram-bot": "dev-master",
         "mashape/unirest-php": "3.*"
     },
     "require": {
-        "masoud/macneed-telegram-bot": "@dev",
+        "masoud/macneed-telegram-bot": "dev-master",
         "simple-html-dom/simple-html-dom": "*"
-    }
+    },
+    "minimum-stability": "dev"
 }
