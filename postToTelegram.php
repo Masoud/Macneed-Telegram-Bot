@@ -1,9 +1,7 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-include('assets/lib/simple_html_dom.php');
+require_once 'vendor/autoload.php';
+include('vendor/simple-html-dom/simple-html-dom/simple_html_dom.php');
 $html = file_get_html('http://macneed.ir');
-require_once 'assets/lib/Unirest.php';
 $chatIDorChannelID = 'SampleChatID';
 $botToken = 'SampleBotToken';
 $i = 0;
