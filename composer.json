@@ -4,6 +4,7 @@
     "type": "project",
     "homepage": "https://github.com/Masoud/Macneed-Telegram-Bot",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Masoud",
