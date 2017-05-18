@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
 include('vendor/simple-html-dom/simple-html-dom/simple_html_dom.php');
 $html = file_get_html('http://macneed.ir');
-$chatIDorChannelID = 'SampleChatID';
+$chatIDorChannelID = 'SampleID';
 $botToken = 'SampleBotToken';
 $i = 0;
 $href_single = $_GET['URL'];
