@@ -4,40 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fab7bad5aa3992477acc2810e5045a4",
+    "content-hash": "00641d23035a7f90617039faccff5bdd",
     "packages": [
         {
-            "name": "simple-html-dom/simple-html-dom",
-            "version": "1.5.0",
+            "name": "imangazaliev/didom",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/miclf/simple-html-dom.git",
-                "reference": "961610576c460546677a635062e9d3d7b6dab745"
+                "url": "https://github.com/Imangazaliev/DiDOM.git",
+                "reference": "a00fe0216da520275bfa2137e98d39882044d3fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miclf/simple-html-dom/zipball/961610576c460546677a635062e9d3d7b6dab745",
-                "reference": "961610576c460546677a635062e9d3d7b6dab745",
+                "url": "https://api.github.com/repos/Imangazaliev/DiDOM/zipball/a00fe0216da520275bfa2137e98d39882044d3fb",
+                "reference": "a00fe0216da520275bfa2137e98d39882044d3fb",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DiDom\\": "src/DiDom/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "S.C. Chen",
-                    "email": "me578022@gmail.com"
+                    "name": "Imangazaliev Muhammad",
+                    "email": "imangazalievm@gmail.com"
                 }
             ],
-            "description": "A copy of the PHP Simple HTML DOM Parser project.",
-            "support": {
-                "source": "https://github.com/miclf/simple-html-dom/tree/1.5.0"
-            },
-            "time": "2013-05-14T22:27:35+00:00"
-        }
-    ],
-    "packages-dev": [
+            "description": "Simple and fast HTML parser",
+            "homepage": "https://github.com/Imangazaliev/DiDOM",
+            "keywords": [
+                "didom",
+                "html",
+                "parser",
+                "xml"
+            ],
+            "time": "2017-05-15T11:17:07+00:00"
+        },
         {
             "name": "mashape/unirest-php",
             "version": "v3.0.4",
@@ -85,6 +99,7 @@
             "time": "2016-08-11T17:49:21+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

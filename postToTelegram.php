@@ -1,19 +1,21 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 require_once 'vendor/autoload.php';
-include('vendor/simple-html-dom/simple-html-dom/simple_html_dom.php');
-$html = file_get_html('http://macneed.ir');
+use DiDom\Document;
+$html = new Document('http://macneed.ir', true);
 $chatIDorChannelID = 'SampleID';
 $botToken = 'SampleBotToken';
 $i = 0;
 $href_single = $_GET['URL'];
-$single = file_get_html($href_single);
+$single = new Document($href_single, true);
 foreach ($single->find('.single') as $title_single) {
     foreach ($single->find('.title h1') as $title_single) {
-        $title_single = $title_single->innertext;
+        $title_single = $title_single->text();
     }
     $first_p = 0;
     foreach ($single->find('.content p') as $content_single) {
-        $content_single = $content_single->innertext;
+        $content_single = $content_single->text();
         $headers = ['Accept' => 'application/json'];
         $first_p++;
         if ($first_p == 1) {
@@ -33,7 +35,7 @@ foreach ($single->find('.single') as $title_single) {
     }
     $content_single = str_replace('&nbsp;', ' ', $content_single);
     $content_single = str_replace('&zwnj;', ' ', $content_single);
-    $contet_post = "<strong>🖥  " . $title_single . "</strong>\n\n"
+    $contet_post = "<strong>🖥  " . $title_single . "</strong>\n"
     . $content_single . "
     ====================
     @MacNeed <a href='$image_post_'>&#x2060;</a>";

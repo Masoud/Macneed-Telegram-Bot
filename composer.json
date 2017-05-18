@@ -4,22 +4,15 @@
     "type": "project",
     "homepage": "https://github.com/Masoud/Macneed-Telegram-Bot",
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Masoud",
             "email": "masoudnikoomanesh@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/Youpie/simple-html-dom"
-        }
-    ],
-    "require-dev": {
-        "mashape/unirest-php": "3.*"
-    },
     "require": {
-        "simple-html-dom/simple-html-dom": "*"
+        "mashape/unirest-php": "^3.0",
+        "imangazaliev/didom": "^1.10"
     }
 }
