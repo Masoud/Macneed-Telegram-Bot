@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b933b5d7cf85fe7fbabd7943740275c",
+    "content-hash": "1fab7bad5aa3992477acc2810e5045a4",
     "packages": [
         {
             "name": "simple-html-dom/simple-html-dom",
@@ -21,7 +21,6 @@
                 "shasum": ""
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -32,6 +31,9 @@
                 }
             ],
             "description": "A copy of the PHP Simple HTML DOM Parser project.",
+            "support": {
+                "source": "https://github.com/miclf/simple-html-dom/tree/1.5.0"
+            },
             "time": "2013-05-14T22:27:35+00:00"
         }
     ],
